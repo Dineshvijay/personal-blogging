@@ -1,0 +1,23 @@
+{
+  "name": "personal-blogging",
+  "version": "1.0.0",
+  "description": "Two page personal blogging site using HTML5 &amp; CSS3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files '*.html, styles/*.css' --browser 'FirefoxDeveloperEdition'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dineshvijay/personal-blogging.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dineshvijay/personal-blogging/issues"
+  },
+  "homepage": "https://github.com/Dineshvijay/personal-blogging#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
