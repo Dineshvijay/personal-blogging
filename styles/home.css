@@ -1,3 +1,9 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .wrapper {
     max-width: 900px;
     margin-left: auto;
@@ -5,74 +11,77 @@
 }
 
 .container {
-    background-color: crimson;
+    background-color: firebrick;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 150px 1fr 50px;
-    grid-template-areas: "hd hd hd hd hd"
-    "main main sd sd sd"
-    "ft ft ft ft ft"
-    ;
-    gap: 10px 10px;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "hd hd"
+    "main sd"
+    "ft ft";
     border: green 5px solid;
+    height: 100vh;
+}
+
+@media(max-width: 600px) {
+    .container {
+        background-color: firebrick;
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas: "hd"
+        "main"
+        "sd"
+        "ft";
+        border: green 5px solid;
+        height: 100vh;
+    }
 }
 
 .header {
-    display: grid;
+    background-color: lightgrey;
     grid-area: hd;
-    grid-template-rows: 1fr 1fr;
-    border: blue 5px solid;
+    margin: 0.7rem;
+    border-radius: 5px;
 }
 
 .site-title {
-    border: black 5px solid;
     text-align: center;
+    line-height: 1em;
 }
 
-.menus {
-    border: black 5px solid;
+.nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: grid;
-    justify-content: center;
-    margin-top: auto;
-    margin-bottom: auto;
-    grid-template-columns: repeat(4, minmax(60px, 150px));
-    column-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    column-gap: 20px;
+    row-gap: 20px;
+    height: 2.5rem;
 }
 
-.menu-item {
-    background-color: white;
-    height: 30px;
+.nav-item {
+    background-color: olivedrab;
     text-align: center;
-    font-size: 18px;
-    font-weight: lighter;
+    align-items: center;
 }
-
 
 .content {
-    display: grid;
+    margin: 0.7rem;
+    background-color: cadetblue;
     grid-area: main;
-    border: yellow 5px solid;
-}
-
-.item {
-    margin: 30px;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 100px;
-    row-gap: 100px;
-    font-size: 24px;
-    font-weight: bold;
-    border: mediumspringgreen 5px solid;
+    border-radius: 5px;
 }
 
 .sidebar {
-    display: grid;
+    background-color: darkolivegreen;
     grid-area: sd;
-    border: black 5px solid;
+    margin: 0.7rem;
+    border-radius: 5px;
 }
 
 .footer {
-    display: grid;
+    background-color: thistle;
     grid-area: ft;
-    border: violet 5px solid;
+    border-radius: 5px;
+    margin: 0.7rem;
 }
