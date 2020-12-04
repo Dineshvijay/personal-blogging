@@ -126,7 +126,6 @@ html,body {
         display: grid;
         grid-template-columns: none;
         grid-template-rows: auto 1fr;
-        row-gap: 50px;
     }
 }
 .primary {
