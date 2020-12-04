@@ -86,7 +86,7 @@ html,body {
     border-radius: 5px;
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto;
     row-gap: 10px;
 }
 
@@ -125,7 +125,8 @@ html,body {
     .main {
         display: grid;
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        row-gap: 50px;
     }
 }
 .primary {
@@ -133,7 +134,7 @@ html,body {
     margin-right: 10px;
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
 }
 
 .secondary {
