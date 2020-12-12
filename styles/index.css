@@ -1,4 +1,6 @@
 @import "card.css";
+@import "info.css";
+@import "comments.css";
 
 html,body {
     background-color: white;

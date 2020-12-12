@@ -1,0 +1,71 @@
+/* 
+------------------------
+Comments title
+------------------------
+          |
+  avatar  | 
+          |
+------------------------
+Comments - Text
+------------------------
+*/
+
+
+.comments-widget {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: none;
+}
+
+.comments-title {
+    margin-left: 10px;
+    font-size: 1.5em;
+    color: #999999;
+    font-weight: bold;
+}
+
+.comments-user-section {
+    display: flex;
+    flex-flow: row;
+}
+
+.comments-text {
+    margin-left: 10px;
+    font-size: 1.0em;
+    color: black;
+    font-style: italic;
+}
+
+.commented-user-avatar {
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 26px;
+    border: #1fe392 solid 2px;
+}
+
+.commented-user-name {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+}
+
+.commented-date {
+    margin-left: 10px;
+    margin-top: auto;
+    font-size: 0.9em;
+    color: #999999;
+}
+
+.comment-reply-button {
+    margin-left: 10px;
+    font-size: 1.0em;
+    color:#999999;
+    font-style: italic;
+}
