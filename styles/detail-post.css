@@ -1,11 +1,11 @@
-.author-widget {
+.user-widget {
     margin-right: auto;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: none;
 }
 
-.author-name {
+.user-name {
     margin-left: 10px;
     margin-top: 15px;
     margin-bottom: auto;
@@ -15,30 +15,29 @@
     color: black;
 }
 
-.author-posted-date {
+.user-posted-date {
     margin: auto;
     font-size: 0.9em;
     color: #999999;
 }
 
-.author-comments {
+.user-comments {
     margin: 10px;
     font-size: 0.9em;
     color: #999999;
     font-weight: normal;
 }
 
-.author-avatar {
+.user-avatar {
     margin-top: 10px;
     margin-left: 5px;
-    background-color: black;
     width: 50px;
     height: 50px;
     border-radius: 26px;
     border: #1fe392 solid 2px;
 }
 
-.author-date-widget {
+.user-date-widget {
     line-height: 0.1em;
     margin-left: 10px;
     display: grid;

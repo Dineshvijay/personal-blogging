@@ -1,15 +1,14 @@
 /* 
 ------------------------
-Comments title
+R1 - Comments title
 ------------------------
-          |
-  avatar  | 
-          |
+ R2        |
+ C1 avatar | C2 Name
+           | Date
 ------------------------
-Comments - Text
+R3 Comments - Text
 ------------------------
 */
-
 
 .comments-widget {
     display: grid;
@@ -39,7 +38,6 @@ Comments - Text
 .commented-user-avatar {
     margin-top: 10px;
     margin-left: 5px;
-    background-color: black;
     width: 50px;
     height: 50px;
     border-radius: 26px;
