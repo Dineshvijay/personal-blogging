@@ -23,18 +23,6 @@ html,body {
     "ft";
 }
 
-@media(max-width: 600px) {
-    .container {
-        display: grid;
-        grid-template-columns: none;
-        grid-template-rows: auto 1fr auto auto;
-        grid-template-areas: "hd"
-        "main"
-        "sd"
-        "ft";
-    }
-}
-
 .header {
     grid-area: hd;
     border-radius: 5px;
@@ -51,13 +39,24 @@ html,body {
 }
 
 .brand-title {
-    font-size: 10rem;
+    font-size: 10em;
     text-align: center;
 }
 
 .brand-sub-title {
-    font-size: 0.8em;
+    font-size: 1.2em;
     text-align: center;
+}
+
+@media(max-width:600px) {
+    .brand-title {
+        font-size: 6em;
+        text-align: center;
+    }
+    .brand-sub-title {
+        font-size: 0.8em;
+        text-align: center;
+    }
 }
 
 .nav {
@@ -70,6 +69,7 @@ html,body {
 }
 
 .nav-item {
+    text-decoration: none;
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 0.9em;
@@ -78,6 +78,10 @@ html,body {
     line-height: 2rem;
     text-align: center;
     color: #999999;
+}
+.nav-item:hover {
+    color: #1fe392;
+    text-decoration: none;
 }
 
 .content {
@@ -99,7 +103,6 @@ html,body {
 }
 
 .widget-title {
-    line-height: 0.3rem;
     margin-left: 10px;
     font-size: 1.5em;
     color: #999999;
@@ -117,7 +120,7 @@ html,body {
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: auto 250px;
     grid-template-rows: none;
 }
 
@@ -133,7 +136,7 @@ html,body {
     margin-right: 10px;
     display: grid;
     grid-template-columns: none;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: 0.5fr;
 }
 
 .secondary {
