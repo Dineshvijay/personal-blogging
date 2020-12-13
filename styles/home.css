@@ -43,11 +43,13 @@ html,body {
 .brand-title {
     font-size: 10em;
     text-align: center;
+    color: #1fe392;
 }
 
 .brand-sub-title {
     font-size: 1.2em;
     text-align: center;
+    color: black;
 }
 
 @media(max-width:600px) {
@@ -111,6 +113,15 @@ html,body {
     font-weight: bold;
 }
 
+@media(max-width: 600px) {
+    .widget-title {
+        margin-left: 20px;
+        font-size: 1.5em;
+        color: #999999;
+        font-weight: bold;
+    }
+}
+
 .feature-thumbnail {
     margin-left: 10px;
     margin-right: 10px;
@@ -139,11 +150,19 @@ html,body {
     display: grid;
     grid-template-columns: none;
     grid-template-rows: 0.5fr;
+    row-gap: 30px;
 }
 
 .secondary {
     background-color: white;
-    border-left: 1px solid #dddddd
+    /* border-left: 1px solid #dddddd; */
+}
+
+@media(max-width: 600px) {
+    .secondary {
+        background-color: white;
+        margin-top: 20px;
+    }
 }
 
 .popular-thumbnail {
@@ -156,6 +175,7 @@ html,body {
 }
 
 .footer {
+    margin-top: 20px;
     background-color: #f5f5f5;
     grid-area: ft;
 }

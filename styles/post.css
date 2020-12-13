@@ -1,4 +1,13 @@
+
+.detail-card-widget {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(auto, 150px);
+}
+
 .user-widget {
+    margin-left: 10px;
     margin-right: auto;
     display: grid;
     grid-template-columns: auto auto;
@@ -52,8 +61,7 @@
 }
 
 .social-share {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: auto;
 }
 
 .social-share-title {
@@ -62,4 +70,28 @@
     font-size: 1.2em;
     font-style: italic;
 
+}
+
+.fig-caption {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-style: italic;
+    color: crimson;
+}
+
+.quote {
+    font-size: 1.5em;
+    padding-left: 20px;
+    border-left: 1px solid #999999;
+}
+
+.social-icon {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.share-title {
+    bottom: 20px;
 }
